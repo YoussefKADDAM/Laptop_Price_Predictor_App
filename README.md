@@ -1,66 +1,70 @@
-# 💻 Laptop Price Predictor
+## 💻 Laptop Price Predictor
 
-A machine learning web application that predicts laptop prices from their hardware specifications.
+A Machine Learning web application that predicts laptop prices based on hardware specifications.
+Built with Python, Scikit-Learn, Streamlit, Docker, and Azure Cloud.
 
-Built with **Python, Streamlit, Docker, and Azure App Service**.
+___
 
----
+## 📂 Project Structure
 
-## 📁 Project Structure
+├── app.py                         # Streamlit web application
 
-app.py # Streamlit web app
+├── Laptop_Prediction_Project.ipynb # ML training & evaluation notebook
 
-Laptop_Prediction_Project.ipynb # ML training notebook
+├── pipe.pkl                       # Trained ML model
 
-pipe.pkl # Trained ML model
+├── df.pkl                         # Preprocessed dataset for prediction
 
-df.pkl # Preprocessed data for the app
+├── laptop_price.csv               # Original dataset
 
-laptop_price.csv # Dataset
+├── Dockerfile                     # Docker container configuration
 
-Dockerfile # Docker container config
+├── requirements.txt               # Python dependencies
 
-requirements.txt # Dependencies
+└── README.md                      # Project documentation
 
-README.md
+___
 
----
+## 🚀 Run Locally
 
-## ▶️ Run Locally
+1. Install dependencies:
 
 pip install -r requirements.txt
+
+2. Start the app: 
+
 streamlit run app.py
 
-App runs on:
+App will run at:
 👉 http://localhost:8501/
 
----
+___
 
-## 🐳 Docker
+## 🐳 Docker Usage
 
-Build:
+1. Build the Docker image:
 
 docker build -t laptop-price-predictor .
 
-Run:
+2. Run the container:
 
 docker run -p 8501:8501 laptop-price-predictor
 
----
+___
 
-## ☁️ Azure Deployment
+## ☁️ Azure Deployment (Docker Container)
 
-Create Web App → Container → Docker Hub
+1. Create an Azure Web App → Container
 
-Use image:
+2. Use Docker Hub image:
 
 kaddamyoussef/laptop-price-predictor:latest
 
-Add App Setting:
+3. Add App Setting:
 
 WEBSITES_PORT = 8501
 
----
+___
 
 ## 🛠 Tech Stack
 
@@ -74,9 +78,16 @@ Docker
 
 Azure App Service
 
----
+___
+
+![App Screenshot 1](Images/PNG1.png)
+![App Screenshot 2](Images/PNG2.png)
+![App Screenshot 3](Images/PNG3.png)
+
+___
 
 ## 👤 Author
+KADDAM Youssef
 
 GitHub: https://github.com/kaddamyoussef
 
